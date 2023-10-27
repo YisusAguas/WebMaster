@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Reserva aqui</title>
+</head>
+<body>
+    <div class="login-container">
+        <h1 class="form-h1">Reserva aqui</h1>
+        <form action="enviar_correo.php" method="POST">
+        <input type="text" id="Nombres" name="nombre" placeholder="Nombres" required>
+        <input type="email" id="Correo" name="email" placeholder="Correo" required>
+        <input type="tel" id="Telefono" name="telefono" placeholder="Telefono">
+        <textarea rows="4" cols="38" name="comentario" placeholder="Escriba aquí más detalles"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>

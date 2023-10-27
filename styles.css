@@ -1,0 +1,218 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(fondo1.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav div {
+    display: flex;
+    align-items: center; 
+}
+
+nav img {
+    max-width: 100px;
+    margin-right: 10px; 
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.menu {
+    list-style: none;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 10px;
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.reserva{
+    color: #fff; 
+    padding: 10px 20px; 
+    border: 2px solid #007bff; 
+    border-radius: 5px; 
+    display: inline-block;
+}
+.reserva:hover{
+    background-color: #007bff;
+}
+
+.login-container {
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.form-h1 {
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 94%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.pagina{
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.pagina h1{
+    color: white;
+    text-align: center;
+}
+
+/* Estilos para el contenedor de tarjetas */
+.tarjetas {
+    display: flex;
+    justify-content: space-between; 
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+ }
+ 
+  .tarjeta {
+    width: 30%; 
+    background-color: #f0f0f0; 
+    padding: 20px; 
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+    margin: 5px; 
+  }
+  
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+.persona {
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.jefe {
+    display: block;
+}
+
+.empleados {
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+
+.persona img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.persona h2 {
+    color: #333;
+    margin: 10px 0;
+}
+
+.persona p {
+    color: #666;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        display: none;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .menu-toggle.active .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .menu-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}
